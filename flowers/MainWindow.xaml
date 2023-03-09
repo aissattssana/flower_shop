@@ -1,0 +1,28 @@
+﻿<Window x:Class="flowers.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:flowers"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FFFCF0F0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="1"  Content="꽃 Да купи ты уже цветочки!" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Segoe UI Black" Height="NaN" Width="NaN" FontSize="24"/>
+        <Label Grid.Row="1" Grid.Column="1" Content="цветы" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" MouseDoubleClick="flowers_MouseDoubleClick" Height="NaN" Width="NaN" FontFamily="Segoe UI Black" x:Name="flowers" FontSize="23"/>
+        <Label Grid.Row="2" Grid.Column="1" Content="аксессуары" x:Name="accessories" HorizontalContentAlignment="Left" MouseDoubleClick="accessories_MouseDoubleClick" VerticalContentAlignment="Center" FontFamily="Segoe UI Black" Height="NaN" Width="NaN" FontSize="23" />
+        <Label Grid.Row="3" Grid.Column="1" Content="букеты" x:Name="bouget" HorizontalContentAlignment="Left" MouseDoubleClick="bouget_MouseDoubleClick" VerticalContentAlignment="Center" FontFamily="Segoe UI Black" Height="NaN" Width="NaN" FontSize="23" />
+        <Button x:Name="entr" Grid.Column="2" Grid.Row="0" Content="войти" Click="enter_Click" Background="#FFEBA1A1" Margin="0,13,0,13"/>
+
+    </Grid>
+</Window>
