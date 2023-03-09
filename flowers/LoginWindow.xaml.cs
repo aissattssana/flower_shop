@@ -26,7 +26,7 @@ namespace flowers
 		FlowerShopdbContext db = new FlowerShopdbContext();
 		private void entr_Click(object sender, RoutedEventArgs e)
 		{
-            if (login.Text == " " || password.Text == " ")
+            if (login.Text == " " || password.Password == " ")
             {
                 MessageBox.Show("Введите все данные!!");
                 return;
@@ -34,7 +34,7 @@ namespace flowers
 
             foreach (User user in db.Users)
             {
-                if (user.Login == login.Text && user.Password == password.Text)
+                if (user.Login == login.Text && user.Password == password.Password)
                 {
                     if (user.Role == "admin")
                     {

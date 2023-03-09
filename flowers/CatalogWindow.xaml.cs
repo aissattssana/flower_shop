@@ -41,5 +41,21 @@ namespace flowers
         {
             CatalogView.ItemsSource = db.Catalogs.Where(x => x.Type == "accessories").ToList();
         }
+
+        private void prof_Click(object sender, RoutedEventArgs e)
+        {
+
+            var window = new LoginWindow();
+            window.Show();
+            this.Close();
+        }
+
+        private void back_Click(object sender, RoutedEventArgs e)
+        {
+
+            var window = new MainWindow();
+            window.Show();
+            this.Close();
+        }
     }
 }

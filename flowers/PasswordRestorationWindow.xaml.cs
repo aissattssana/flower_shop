@@ -26,32 +26,17 @@ namespace flowers
         {
             InitializeComponent();
         }
-		/// <summary>
-		/// Код восстановления.
-		/// </summary>
 		private int _restorationCode;
 
-		/// <summary>
-		/// Код операции.
-		/// </summary>
 		private int _operationCode = 0;
 
-		/// <summary>
-		/// Существование пользователя.
-		/// </summary>
 		private bool _userExists = false;
 
-		/// <summary>
-		/// Пользователь.
-		/// </summary>
 		private User _user;
 
 		/// <summary>
 		/// Отправка кода на почту.
 		/// </summary>
-		/// emailTextBox - бок с почтой, codeTextBox - Где вводят код с почты, newPasswordTextBox - бокс с новым паролем
-		/// codeLabel, border и т п - можешь убирать, это от моих стилей
-		/// Там где контент кнопки, можешь свои текста ставить по мере прохождения боксов
 		private void SendCode()
 		{
 			MailAddress from = new MailAddress("dotacourierentertainment@mail.ru", "Bloodseeker");
@@ -78,9 +63,6 @@ namespace flowers
 			smtp.Send(m);
 		}
 
-		/// <summary>
-		/// Обработчик кнопки отправки.
-		/// </summary>
 		private void sendButton_Click(object sender, RoutedEventArgs e)
 		{
 			#region Валидация.
@@ -152,9 +134,6 @@ namespace flowers
 			}
 		}
 
-		/// <summary>
-		/// твоя кнопка назад, коммент убери
-		/// </summary>
 		/// <param name="sender"></param>
 		/// <param name="e"></param>
 		private void back_Click(object sender, RoutedEventArgs e)

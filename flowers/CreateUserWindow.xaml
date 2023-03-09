@@ -36,7 +36,7 @@
         <Button x:Name="create" Click="create_Click" Style="{StaticResource Pink}" Content="добавить" Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center" Width="104" Height="36"/>
         <Button x:Name="back" Click="back_Click" Style="{StaticResource Pink}" Content="назад" Grid.Row="6" HorizontalAlignment="Right" VerticalAlignment="Center" Width="104" Height="36"/>
         <Label Content="телефон" Style="{StaticResource txt}" FontSize="14" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="52,37,0,0"/>
-        <TextBox x:Name="phone_u" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Top" Width="224" Margin="0,44,0,0"/>
+        <TextBox x:Name="phone_u" MaxLength="12" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Top" Width="224" Margin="0,44,0,0"/>
 
     </Grid>
 </Window>

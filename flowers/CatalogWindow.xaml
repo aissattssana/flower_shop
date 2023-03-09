@@ -13,7 +13,8 @@
             <RowDefinition Height="6*"/>
         </Grid.RowDefinitions>
         <Label Grid.Row="0"  Content="꽃 Да купи ты уже цветочки!" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Segoe UI Black" Height="NaN" Width="NaN" FontSize="24"/>
-        <Button Content="профиль" HorizontalAlignment="Left" Style="{StaticResource Pink}" VerticalAlignment="Center" Margin="709,0,0,0" Height="30" Width="66"/>
+        <Button Content="профиль" x:Name="prof" Click="prof_Click" HorizontalAlignment="Left"  Style="{StaticResource Pink}" VerticalAlignment="Center" Margin="697,0,0,0" Height="30" Width="66"/>
+        <Button Content="каталог" x:Name="back" HorizontalAlignment="Left" Style="{StaticResource Pink}" VerticalAlignment="Top" Margin="82,14,0,0" Height="30" Width="66" Click="back_Click"/>
         <RadioButton x:Name="buqet" Click="buqet_Click" Content="букеты" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="1" FontFamily="Segoe UI Black" Height="NaN" Width="NaN" FontSize="18" Margin="62,0,0,0"/>
         <RadioButton x:Name="flowers" Click="flowers_Click" Content="цветы" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" FontFamily="Segoe UI Black" Height="NaN" Width="NaN" FontSize="18" />
         <RadioButton x:Name="accessories" Click="accessories_Click" Content="аксессуары" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="1" FontFamily="Segoe UI Black" Height="NaN" Width="NaN" FontSize="18" Margin="638,0,0,0" />
@@ -36,7 +37,7 @@
                                 <RowDefinition Height="Auto"></RowDefinition>
                             </Grid.RowDefinitions>
                             <!--<Image Grid.Row="1" Source="FallbackValue={StaticResource NullImage}" HorizontalAlignment="Center" VerticalAlignment="Center"></Image>-->
-                           <TextBlock Grid.Row="0" Text="{Binding Name}" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                            <TextBlock Grid.Row="0" Text="{Binding Name}" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                             <TextBlock Grid.Row="1" Text="{Binding Text}" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                             <TextBlock Grid.Row="2" Text="{Binding Cost}" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
                         </Grid>

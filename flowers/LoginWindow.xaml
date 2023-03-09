@@ -17,7 +17,7 @@
         <Label Content="логин" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Segoe UI Semibold" FontSize="24" Margin="80,72,0,119" Grid.RowSpan="3"/>
         <TextBox x:Name="login" Grid.Row="1"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="260,38,213,38" />
         <Label Content="пароль" Grid.Row="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Segoe UI Semibold" FontSize="24" Margin="80,120,0,120" Grid.RowSpan="3" />
-        <TextBox x:Name="password" Grid.Row="2"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="260,37,213,37" />
+        <PasswordBox x:Name="password" Grid.Row="2"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="260,37,213,37" />
         <Button x:Name="entr" Grid.Row="3" Click="entr_Click"  Background="#F6B2B2" BorderBrush="#F6B2B2" Margin="180,25,287,24" Content="войти" FontFamily="Segoe UI Semibold" FontSize="24"/>
         <Button x:Name="back" Grid.Row="3" Click="back_Click"  Background="#F6B2B2" BorderBrush="#F6B2B2" Margin="35,25,661,24" Content="назад" FontFamily="Segoe UI Semibold" FontSize="24"/>
         <Button x:Name="pass" Grid.Row="3" Click="pass_Click"  Background="#F6B2B2" BorderBrush="#F6B2B2" Margin="546,25,10,24" Content="восстановить пароль" FontFamily="Segoe UI Semibold" FontSize="24"/>
